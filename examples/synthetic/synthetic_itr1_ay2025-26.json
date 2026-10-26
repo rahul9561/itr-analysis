@@ -1,0 +1,75 @@
+{
+  "ITR": {
+    "ITR1": {
+      "CreationInfo": {
+        "SWVersionNo": "R1",
+        "SWCreatedBy": "SW00000000",
+        "JSONCreatedBy": "SW00000000",
+        "JSONCreationDate": "2025-07-15"
+      },
+      "Form_ITR1": {
+        "FormName": "ITR-1",
+        "Description": "Synthetic",
+        "AssessmentYear": "2025",
+        "SchemaVer": "Ver1.0",
+        "FormVer": "Ver1.0"
+      },
+      "PersonalInfo": {
+        "AssesseeName": {
+          "FirstName": "TEST",
+          "SurNameOrOrgName": "PERSON GAMMA"
+        },
+        "PAN": "CCCPX4321X",
+        "Address": {
+          "ResidenceNo": "1",
+          "CityOrTownOrDistrict": "TESTCITY",
+          "PinCode": 0
+        },
+        "DOB": "1985-01-01"
+      },
+      "FilingStatus": {
+        "ReturnFileSec": 11,
+        "OptOutNewTaxRegime": "N"
+      },
+      "ITR1_IncomeDeductions": {
+        "GrossSalary": 575000,
+        "IncomeFromSal": 500000,
+        "TotalIncomeOfHP": 0,
+        "IncomeOthSrc": 12003,
+        "GrossTotIncome": 512003,
+        "DeductUndChapVIA": {
+          "Section80C": 0,
+          "TotalChapVIADeductions": 0
+        },
+        "TotalIncome": 512000,
+        "ExemptIncAgriOthUs10": {
+          "ExemptIncAgriOthUs10Total": 0
+        }
+      },
+      "ITR1_TaxComputation": {
+        "TotalTaxPayable": 10600,
+        "Rebate87A": 10600,
+        "TaxPayableOnRebate": 0,
+        "EducationCess": 0,
+        "GrossTaxLiability": 0,
+        "Section89": 0,
+        "NetTaxLiability": 0,
+        "TotalIntrstPay": 0,
+        "TotTaxPlusIntrstPay": 0
+      },
+      "TaxPaid": {
+        "TaxesPaid": {
+          "AdvanceTax": 0,
+          "TDS": 5004,
+          "TCS": 0,
+          "SelfAssessmentTax": 0,
+          "TotalTaxesPaid": 5004
+        },
+        "BalTaxPayable": 0
+      },
+      "Refund": {
+        "RefundDue": 5000
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+# Real taxpayer documents and generated reports must never be committed
+input/
+output/
+examples/django_project/db.sqlite3

@@ -1,0 +1,5 @@
+{
+  "YEAR_OVER_YEAR_INCOME_CHANGE": {"threshold_pct": "40"},
+  "EXEMPT_INCOME_DISCLOSED": {"severity": "low"},
+  "LATE_FILING": {"enabled": false}
+}

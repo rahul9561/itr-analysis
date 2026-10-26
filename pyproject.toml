@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "itr-analysis-engine"
+version = "0.1.0"
+description = "Deterministic, local analysis of Indian Income Tax Return documents (PDF / official JSON) with explainable review indicators."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [{ name = "AV Management" }]
+dependencies = [
+    "PyMuPDF>=1.23",
+    "reportlab>=4.0",
+]
+
+[project.optional-dependencies]
+django = ["Django>=4.2", "djangorestframework>=3.14"]
+dev = ["pytest>=7.4", "Django>=4.2", "djangorestframework>=3.14"]
+
+[project.scripts]
+itr-analyze = "itr_analysis_engine.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+itr_analysis_engine = ["assets/*.png", "assets/fonts/*.ttf", "assets/fonts/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+addopts = "-ra"

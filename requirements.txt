@@ -1,0 +1,8 @@
+# Core engine
+PyMuPDF>=1.23
+reportlab>=4.0
+# Django REST API (optional)
+Django>=4.2
+djangorestframework>=3.14
+# Tests
+pytest>=7.4
